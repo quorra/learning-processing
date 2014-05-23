@@ -6,7 +6,7 @@
 <h2>Simple processing.js via JavaScript</h2>
 <p>Clock</p>
 
-<p><canvas id="canvas1" width="200" height="200"></canvas></p>
+<p><canvas id="canvas1"></canvas></p>
 
 <script id="script1" type="text/javascript">
 
@@ -15,8 +15,11 @@ function sketchProc(processing) {
   // Override draw function, by default it will be called 60 times per second
   processing.draw = function() {
     var strokeSize = 255;
+background(600,400,200);
 
-    stroke(strokeSize);
+stroke(strokeSize);
+fill(0,0,255);
+rect(250,200,100,75);
   };  
 }
 
