@@ -14,8 +14,9 @@
 function sketchProc(processing) {
   // Override draw function, by default it will be called 60 times per second
   processing.draw = function() {
+    var strokeSize = 255;
 
-    
+    stroke(strokeSize);
   };  
 }
 
